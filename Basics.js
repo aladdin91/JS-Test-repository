@@ -18,8 +18,6 @@ const clicked = () => {
     h1.innerHTML = `<h1> this is an h1 tag </h1>`
 }
 
-
-
 const fetchEmail = async() => {
     let headersList = {
         "Accept": "*/*",
@@ -33,7 +31,6 @@ const fetchEmail = async() => {
 
     let usersdata = await response.json();
     const userArray = usersdata.data
-        // console.log(userArray);
 
     let newArray = userArray.slice(0, 3)
     console.log(newArray);
